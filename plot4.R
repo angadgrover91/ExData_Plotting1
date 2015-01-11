@@ -1,5 +1,8 @@
+# Sets session to Display multiple plots
 par(mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0,0,2,0))
-with(data, {
+
+# Generating Plot 4
+with(data3, {
   plot(Global_active_power ~ Datetime, type = "l", 
        ylab = "Global Active Power", xlab = "")
   plot(Voltage ~ Datetime, type = "l", ylab = "Voltage", xlab = "datetime")
